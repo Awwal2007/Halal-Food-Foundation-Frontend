@@ -35,7 +35,9 @@ const Header = () => {
             </div>
             <div style={{background: `url(${backgroundImage})`, objectFit: "unset", backgroundSize: "cover", backgroundRepeat: "no-repeat" }} className='kingdom-name' >
                 <div style={{display: "flex", gap: "20px", marginTop: "-10px"}}>
-                    <img style={{width: "80px"}} src={logo} alt="logo" />
+                    <Link to='/'>
+                        <img style={{width: "80px"}} src={logo} alt="logo" />
+                    </Link>
                     <h2 style={{marginBottom: "10px", fontSize: "35px", marginTop: "30px"}}>Halal Food Foundation</h2>
                 </div>
                 {/* <p>"The child who listens to prospers"</p> */}
