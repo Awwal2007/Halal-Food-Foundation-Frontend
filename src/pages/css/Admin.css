@@ -128,7 +128,7 @@
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
-  background: #10b981;
+  background: #957030;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -137,7 +137,7 @@
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #059669;
+  background: #3b82f6;
 }
 
 .submit-btn:disabled {

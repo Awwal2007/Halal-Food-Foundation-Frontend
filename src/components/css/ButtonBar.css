@@ -2,7 +2,7 @@
 
 /* Footer Container */
 .footer-container {
-  background: linear-gradient(135deg, #2563eb 0%, #2563eb 100%);
+  background: #1151D3;
   color: #ecf0f1;
   padding: 40px 20px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -179,7 +179,7 @@
 }
 
 .submit-btn {
-  background: #ab833b;
+  background: #ab833b !important;
   color: white;
   border: none;
   border-radius: 5px;

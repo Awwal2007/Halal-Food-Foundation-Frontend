@@ -1,0 +1,57 @@
+/* Skeleton Loader Styles */
+.skeleton-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* same as your carousel height */
+  background: #f4f4f4;
+  border-radius: 12px;
+}
+
+.skeleton-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f4f4f4 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  border-radius: 10px;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-text {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.skeleton-line {
+  height: 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f4f4f4 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-line.title {
+  width: 60%;
+  height: 20px;
+}
+
+.skeleton-line.short {
+  width: 40%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

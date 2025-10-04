@@ -9,6 +9,7 @@ import { SlPeople } from 'react-icons/sl'
 import MissedArticles from '../components/MissedArticles'
 import { Button } from '@mui/joy'
 import ButtonBar from '../components/BottomBar'
+import ImageCarousel2 from '../components/ImageCarousel2';
 
 const Home = () => {
   return (
@@ -43,6 +44,14 @@ const Home = () => {
           <p>
             There is a gap in the Muslim community both within and outside of mosques, schools and Islamic centres in providing appropriate educational resources and information on what halal is, what makes food halal, how we know if food is halal and how to live a halal lifestyle. This gap was acknowledged by Halal Accreditation Limited; the idea of an organisation that promotes halal and its various facets to mosques and schools as well as the wider community was put forth and thus, the Halal Food Foundation was born in mid-2013. The HFF want a wider spectrum of the community to eat more halal food but also to understand its importance in Islam. It is undoubtedly easier for many to not eat halal – why seek out halal when you can go to your local supermarket and pick up any ready-made meal or piece of meat? Maintaining a halal diet requires discipline and control but there is little extra effort needed to source halal meat / products due to the ever-increasing halal industry (and the health benefits are abundant!). Education, therefore, is one of the HFF’s main aims – our charity is rooted in the circulation of information and the development of understanding - we believe that halal does not just pertain to food, we believe that halal is a lifestyle. To keep up to date with what we're doing and what is going on in the world of halal, put your details into our subscription widget on the right and we will get in touch with you every month and keep you informed via our newsletter!
           </p>
+
+          <h4>
+            Apply For The Grant
+          </h4>
+
+          <p>
+            Applications to the Halal Food Foundation can only be accepted from registered charities as recognised by the Charity Commission. Grant applications should be sent in a written format to HFF at Finchley House, 707 High Road, Finchley, London, N12 0BT. There are two closing dates 30th April and 31st October each year. No further applications will be considered until each closing date has passed. After these closing dates applications will be forwarded in the first instance to a panel comprising trustees and advisors of HFF for their consideration. Applicants will be notified as soon as practical after each closing date. The application letter should comprise full details of the organisation, the grant requested, what it is for and how the grant will be spent, and any deadlines. Do not send any further information at this stage. If HFF requests further information, this should be provided as soon as possible. The average grant will never exceed £5,000 in any one year and in practise will be considerably less. When considering an application to HFF, ensure that your proposal match the aims of the HFF and within the spirit of the work of HFF. Make sure that your proposal is clear, accurate, and above all, honest. Only one application per charity may be made in any one year. Each grant is a discrete one-off payment with no undertaking that any further grant will be made to that group in the future, although it is free to apply again in subsequent years. If accepted and a grant is offered, the money will be transferred to the bank account of the applicant, upon receipt of an invoice from the charity at the time specified by HFF.
+          </p>
           
           {/* <div className='values-container'>
             <div className='people-container'>
@@ -63,9 +72,12 @@ const Home = () => {
           </div>
            */}
           <div className="secondary-carousel-section">
-            <h1 className="secondary-carousel-title">The Iwo People</h1>
+            <h1 id='board-of-trustees' className="secondary-carousel-title">Board of Trustees</h1>
+            <p style={{textAlign: "center"}}>
+              We have four extremly well-versed and experienced baord of trustees. They actively take part in company's decisions and are the brain of our company.
+            </p>
             <div className='image-carousel-container'>
-              <ImageCarousel />
+              <ImageCarousel2 />
             </div>
           </div>
         </div>

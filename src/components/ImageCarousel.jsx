@@ -2,14 +2,12 @@ import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { useHero } from "../hooks/useHero";
+import './css/ImageCarousel.css'
 
 const ImageCarousel = () => {
-  const { hero, isLoading, fetchHero } = useHero();
+  const { hero, isLoading, } = useHero();
   const [heroImages, setHeroImages] = useState([]);
 
-  // useEffect(() => {
-  //   fetchHero();
-  // }, [fetchHero]);
 
   useEffect(() => {
     if (hero && Array.isArray(hero)) {
@@ -18,7 +16,20 @@ const ImageCarousel = () => {
   }, [hero]);
 
   if (isLoading) {
-    return <div>Loading carousel...</div>;
+    return (
+      <div className="skeleton-carousel">
+        {[...Array(1)].map((_, index) => (
+          <div key={index} className="skeleton-slide">
+            <div className="skeleton-img" />
+            <div className="skeleton-text">
+              <div className="skeleton-line title" />
+              <div className="skeleton-line" />
+              <div className="skeleton-line short" />
+            </div>
+          </div>
+        ))}
+      </div>
+    );
   }
 
   if (!heroImages.length) {
