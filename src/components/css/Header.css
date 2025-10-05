@@ -6,49 +6,50 @@
   --white-shade: #bec3cf;
 }
 .header-container{
-    width: 100%;
-    background-color: var(--main-color);
+  width: 100%;
+  background-color: var(--main-color);
 }
 .clock-container{
-    padding: 10px var(--pad);
+  padding: 10px var(--pad);
 }
 .kingdom-name{
-    width: 100%;
-    height: 150px;
-    /* object-fit: cover; */
-    color: white !important;
-    padding: 30px var(--pad);
-    font-family: "Montserrat", sans-serif;
-    /* font-size: 20px; */
+  width: 100%;
+  height: 150px;
+  /* object-fit: cover; */
+  color: white !important;
+  padding: 30px var(--pad);
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 20px; */
 }
+
 .nav-bar{
-    padding: 0px var(--pad);
-    display: flex !important;
+  padding: 0px var(--pad);
+  display: flex !important;
 }
 .nav-bar .button{
-    color: #bec3cf;
-    font-family: var(--head-font);
-    font-weight: 650;
-    font-size: 16px;
-    border-radius: 0px;
-    padding: 10px 17px;
+  color: #bec3cf;
+  font-family: var(--head-font);
+  font-weight: 650;
+  font-size: 16px;
+  border-radius: 0px;
+  padding: 10px 17px;
 }
 .nav-bar .search-button{
-    color: #bec3cf;
-    font-family: var(--head-font);
-    font-weight: 650;
-    font-size: 16px;
-    border-radius: 0px;
-    padding: 10px 17px;
+  color: #bec3cf;
+  font-family: var(--head-font);
+  font-weight: 650;
+  font-size: 16px;
+  border-radius: 0px;
+  padding: 10px 17px;
 }
 
 .nav-bar .button:hover{
-    background: var(--main-color-shade);
-    color: #fff;
+  background: var(--main-color-shade);
+  color: #fff;
 }
 .active{
-    background: #1151d3 !important;
-    color: #fff !important;
+  background: #1151d3 !important;
+  color: #fff !important;
 }
 /* Ensure flex layout for desktop */
 .desktop-nav {
@@ -57,6 +58,11 @@
   width: 100%;
 }
 
+.brand-name{
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
 /* Hide mobile nav by default */
 .mobile-nav {
   display: none;
@@ -69,6 +75,10 @@
    }
   .desktop-nav {
     display: none;
+  }
+
+  .brand-name{
+    margin-top: 20px;
   }
 
   .mobile-nav {

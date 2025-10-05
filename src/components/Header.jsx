@@ -38,7 +38,7 @@ const Header = () => {
                     <Link to='/'>
                         <img style={{width: "80px"}} src={logo} alt="logo" />
                     </Link>
-                    <h2 style={{marginBottom: "10px", fontSize: "35px", marginTop: "50px"}}>Halal Food Foundation</h2>
+                    <h2 className='brand-name' >Halal Food Foundation</h2>
                 </div>
                 {/* <p>"The child who listens to prospers"</p> */}
             </div>
