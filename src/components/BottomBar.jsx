@@ -69,7 +69,7 @@ const ButtonBar = () => {
               </div>
               <div style={{display: "flex", alignItems: "center", gap: "10px"}}>
                 <img style={{width: "25px"}} src={location} alt="" />
-                <li>3rd Floor, Balfour House,741 High Road, London N12 0BP, UK</li>
+                <li>Unit 15, Linen House, 253 Kilburn Lane, Queen's Park London, W10 4BQ United Kingdom</li>
               </div>
           </ul>
         </div>

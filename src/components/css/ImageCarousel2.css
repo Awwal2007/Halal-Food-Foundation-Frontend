@@ -55,3 +55,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    /* position: relative; */
+    display: block;
+    height: auto !important;
+  }
+  .image-carousel{
+    height: auto;
+  }
+}
