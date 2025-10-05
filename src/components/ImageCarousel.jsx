@@ -43,8 +43,8 @@ const ImageCarousel = () => {
       infiniteLoop
       showThumbs={false}
       showStatus={false}
-      interval={4000}
-      transitionTime={700}
+      interval={3000}
+      transitionTime={1000}
       stopOnHover={false}
       useKeyboardArrows
       aria-label="Image carousel of events"

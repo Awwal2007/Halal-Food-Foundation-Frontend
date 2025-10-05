@@ -88,7 +88,9 @@ const LatestNews = () => {
                     <Link
                       overlay
                       underline="none"
-                      href={`/singleblog/${item?._id}`}
+                      href={`${item?.link}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       sx={{
                         color: 'black',
                         fontFamily: "var(--head-font)",

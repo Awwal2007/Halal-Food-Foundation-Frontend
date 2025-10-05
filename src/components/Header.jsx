@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './css/Header.css'
 import { Link, useLocation } from 'react-router-dom';
-
+import { HashLink } from 'react-router-hash-link';
 import Clock from "../components/Clock";
 import backgroundImage from '../assets/Gold Background2.jpg'
 import Button from '@mui/material/Button';
@@ -46,11 +46,11 @@ const Header = () => {
                 <div className='desktop-nav'>
                     <div><Button component={Link} to='/' className='button active'><TiHome size={28} /></Button></div>
                     <div><Button component={Link} to='/' className={isActive('/')}>Home</Button></div>
-                    <div><Button href='#about-us' className={isActive('/oluwo')}>About us</Button></div>
-                    <div><Button href='#board-of-trustees' className={isActive('/oluwo')}>Board Of Trustees</Button></div>
+                    <div><Button component={HashLink} smooth to="/#about-us" className={isActive('/about')}>About Us</Button></div>
+                    <div><Button component={HashLink} smooth to="/#board-of-trustees" className={isActive('/board')}>Board Of Trustees</Button></div>
                     {/* <div><Button component={Link} to='/iwo-land' className={isActive('/iwo-land')}>Iwo Land</Button></div> */}
                     <div><Button component={Link} to='/blogs' className={isActive('/blogs')}>Blogs</Button></div>
-                    <div><Button component={Link} to='/gallery' className={isActive('/gallery')}>Gallery</Button></div>
+                    {/* <div><Button component={Link} to='/gallery' className={isActive('/gallery')}>Gallery</Button></div> */}
                     {/* <div style={{ flex: "1" }}><Button component={Link} to='/resources' className={isActive('/resources')}>RESOURCES AND HELP</Button></div> */}
                     {/* <div className='search-button'><FaSearch size={18} /></div> */}
                 </div>
@@ -60,11 +60,11 @@ const Header = () => {
                     <summary>☰ Menu</summary>
                     <div className='mobile-menu'>
                         <Button component={Link} to='/' className={isActive('/')} onClick={handleLinkClick}><TiHome size={24} /> Home</Button>
-                        <Button href='#about-us' className={isActive('/oluwo')} onClick={handleLinkClick}>About Us</Button>
-                        <Button href='#board-of-trustees' className={isActive('/oluwo')} onClick={handleLinkClick}>Board Of Trustees</Button>
+                        <Button component={HashLink} smooth to="/#about-us" onClick={handleLinkClick}>About Us</Button>
+                        <Button component={HashLink} smooth to="/#board-of-trustees" onClick={handleLinkClick}>Board Of Trustees</Button>
                         {/* <Button component={Link} to='/iwo-land' className={isActive('/iwo-land')}>Iwo Land</Button> */}
                         <Button component={Link} to='/blogs' className={isActive('/blogs')} onClick={handleLinkClick}>Blogs</Button>
-                        <Button component={Link} to='/gallery' className={isActive('/gallery')} onClick={handleLinkClick}>Gallery</Button>
+                        {/* <Button component={Link} to='/gallery' className={isActive('/gallery')} onClick={handleLinkClick}>Gallery</Button> */}
                         {/* <Button component={Link} to='/resources' className={isActive('/resources')}>RESOURCES AND HELP</Button> */}
                     </div>
                     </details>

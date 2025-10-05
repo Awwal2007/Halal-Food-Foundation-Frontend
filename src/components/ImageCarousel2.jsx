@@ -53,8 +53,8 @@ const ImageCarousel2 = () => {
       infiniteLoop
       showThumbs={false}
       showStatus={false}
-      interval={5000}
-      transitionTime={800}
+      interval={3000}
+      transitionTime={1000}
       stopOnHover={true}
       useKeyboardArrows
       swipeable

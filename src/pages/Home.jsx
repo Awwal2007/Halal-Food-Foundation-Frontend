@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect,} from 'react';
+import { useLocation } from "react-router-dom";
 import './css/Home.css'
 import { Link } from 'react-router-dom'
 import CustomMarquee from '../components/CustomMarquee'
@@ -12,6 +13,16 @@ import ButtonBar from '../components/BottomBar'
 import ImageCarousel2 from '../components/ImageCarousel2';
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const el = document.getElementById(location.state.scrollTo);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div className="home-wrapper">
       <div className='marquee-container'>

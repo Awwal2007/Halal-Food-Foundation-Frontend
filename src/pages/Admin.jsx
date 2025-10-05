@@ -94,6 +94,7 @@ const Admin = () => {
     const formData = new FormData();
     formData.append('title', newEvent.title);
     formData.append('date', newEvent.date);
+    formData.append('link', newEvent.link);
     formData.append('description', newEvent.description);
     if (newEvent.mainImage) formData.append('mainImage', newEvent.mainImage);
     if (newEvent.image1) formData.append('image1', newEvent.image1);
@@ -257,6 +258,17 @@ const Admin = () => {
                   required
                 ></textarea>
               </div>
+
+              <div className="form-group">
+                <label htmlFor="link">Link *</label>
+                <input
+                  name="link"
+                  placeholder="Event Link"
+                  value={newEvent.link}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
               
               <div className="form-row">
                 <div className="form-group">
@@ -264,7 +276,7 @@ const Admin = () => {
                   <input
                     name="mainImage"
                     type="file"
-                    accept="image/*"
+                    accept="image/png, image/jpeg, image/webp, image/gif"
                     onChange={handleImage}
                     required
                   />
@@ -311,6 +323,7 @@ const Admin = () => {
                       <th>Title</th>
                       <th>Date</th>
                       <th>Description</th>
+                      <th>Link</th>
                       <th>Extra Images</th>
                       <th>Actions</th>
                     </tr>
@@ -343,6 +356,9 @@ const Admin = () => {
                               {expandedRows[ev._id]?.description ? ' Show less' : ' Show more'}
                             </span>
                           )}
+                        </td>
+                        <td>
+                          {ev.link}
                         </td>
                         <td className="extra-images">
                           {ev.image1 && <img src={ev.image1} alt={ev.title} className="thumb" />}
