@@ -32,7 +32,7 @@ const missedArticles = [
 
 const MissedArticles = () => {
   return (
-    <div className="missed-container">
+    <div id='events' className="missed-container">
       <div className="missed-header">
         <h2>Events</h2>
       </div>

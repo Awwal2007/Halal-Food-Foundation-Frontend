@@ -1,7 +1,7 @@
 .footer-container {
-  background: #0e1c4d;
+  background: var(--main-color);
   color: #ffffff;
-  padding: 40px 20px 20px;
+  padding: 40px var(--pad) !important;
 }
 
 .footer-content {
@@ -19,7 +19,7 @@
 }
 
 .footer-logo {
-  width: 100px;
+  width: 80px;
   margin-bottom: 15px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .section-title {
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 15px;
 }
 
