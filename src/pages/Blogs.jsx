@@ -38,7 +38,7 @@ const Blogs = () => {
                     const truncatedHead = item.title.length > 40 ? item.title.slice(0, 40) + "..." : item.title;
                     const truncatedSubHead = item.description.length > 100 ? item.description.slice(0, 100) + "..." : item.description;
                     // const truncatedDescription = item.description.length > 30 ? item.description.slice(0, 30) + "..." : item.description;
-                    return (<Link to={`/singleblog/${item?._id}`} key={i} className='event-card-container' >
+                    return (<a href={item?.link} target='_blank' rel="noopener noreferrer" key={i} className='event-card-container' >
                         <div className="event-card">
                             {/* Left: Image */}
                             <div className="event-image-container">
@@ -65,7 +65,7 @@ const Blogs = () => {
                                 </p>
                             </div>
                         </div>
-                    </Link>)
+                    </a>)
                     })}
                 </div>
                 <div className='second-side'>

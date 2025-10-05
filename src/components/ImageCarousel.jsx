@@ -50,7 +50,7 @@ const ImageCarousel = () => {
       aria-label="Image carousel of events"
     >
       {heroImages.map((img, index) => (
-        <div key={index}>
+        <div className="carousel-title-relative" key={index}>
           <img
             src={img.mainImage || img} // <-- support both object and string
             alt={img.title || `Slide ${index + 1}`}
