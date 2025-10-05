@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import image1 from "../assets/drMartin1.webp";
 import image2 from "../assets/drSiddque1.webp";
 import image3 from "../assets/mrChoudary.webp";
@@ -47,34 +50,34 @@ const ImageCarousel2 = () => {
   }
 
   return (
-    <Carousel
+    <Swiper
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+        delay: 4000,
+        disableOnInteraction: false,
+      }}
+      loop={true}
+      pagination={{ clickable: true }}
+      navigation={true}
+      modules={[Autoplay, Pagination, Navigation]}
       className="image-carousel"
-      autoPlay
-      infiniteLoop
-      showThumbs={false}
-      showStatus={false}
-      interval={3000}
-      transitionTime={1000}
-      stopOnHover={true}
-      useKeyboardArrows
-      swipeable
-      emulateTouch
-      aria-label="Board of Trustees carousel"
     >
       {heroImages.map((member, index) => (
-        <div key={index} className="carousel-slide">
+        <SwiperSlide key={index} className="carousel-slide">
           <img
             src={member.image}
-            alt={member.name}
+            alt={`Slide ${index + 1}`}
             className="trustee-img"
+            style={{touchAction: "auto"}}
           />
           <div className="caption">
             <h2>{member.name}</h2>
             <p>{member.description}</p>
           </div>
-        </div>
+        </SwiperSlide>
       ))}
-    </Carousel>
+    </Swiper>
   );
 };
 

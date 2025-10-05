@@ -32,6 +32,7 @@
     "slick-carousel": "^1.8.1",
     "sonner": "^2.0.3",
     "styled-components": "^6.1.19",
+    "swiper": "^12.0.2",
     "tailwind": "^2.3.1",
     "yup": "^1.6.1"
   },
