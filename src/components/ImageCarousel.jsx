@@ -62,7 +62,7 @@ const ImageCarousel = () => {
               touchAction: "auto",
             }}
           />
-          <p style={{textAlign: "left"}}>{img.title}</p>
+          <p className="carousel-title" style={{textAlign: "left"}}>{img.title}</p>
         </div>
       ))}
     </Carousel>

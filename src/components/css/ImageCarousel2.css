@@ -22,6 +22,7 @@
 
 .carousel-slide:hover .trustee-img {
   transform: scale(1.05);
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
 }
 
 .caption {
@@ -33,12 +34,15 @@
   color: #333;
   padding: 20px;
   text-align: left;
+  align-content: center;
 }
 
 .caption h2 {
   font-size: 1.6rem;
   margin-bottom: 10px;
   font-weight: 600;
+  text-align: center;
+  border-top: 1px solid #333 !important;
 }
 
 .caption p {
