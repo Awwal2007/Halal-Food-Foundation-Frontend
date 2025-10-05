@@ -69,12 +69,13 @@
 }
 
 .missed-content h3 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   color: #111827;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-wrap: wrap;
+  /* text-overflow: ellipsis; */
   margin: 0 0 8px 0;
 }
 
@@ -90,4 +91,15 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.read-more-btn{
+  padding:6px 12px;
+  background: var(--main-color-shade);
+  border: none;
+  color: white;
+  transition: all ease-in-out .5s;
+}
+.read-more-btn:hover{
+  background: var(--main-color);
 }
