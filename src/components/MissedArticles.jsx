@@ -11,18 +11,22 @@ const missedArticles = [
   {
     title: 'HFA WEBINAR-Industry Updates November 2020',
     image: image1,
+    link: "https://halalfoodauthority.com/hfa-webinar-2020/"
   },
   {
     title: 'HFA Halal Industry Conference (HHIC) June 2019',
     image: image3,
+    link: "https://halalfoodauthority.com/hhic2019/"
   },
   {
     title: 'HFA Halal Industry Conference (HHIC) May 2018',
     image: image2,
+    link: "https://halalfoodauthority.com/hhic2018/"
   },
   {
     title: 'HFA Halal Industry Conference (HHIC) May 2017',
     image: image4,
+    link: "https://halalfoodauthority.com/hhic2017/"
   },
 ];
 
@@ -35,7 +39,7 @@ const MissedArticles = () => {
 
       <div className="missed-grid">
         {missedArticles.map((article, idx) => (
-          <Link key={idx} className="missed-card">
+          <a href={article.link} target='_blank' rel="noopener noreferrer" key={idx} className="missed-card">
             <div
               className="missed-image"
               style={{ backgroundImage: `url(${article.image})` }}
@@ -52,12 +56,16 @@ const MissedArticles = () => {
             <div className="missed-content">
               <h3>{article.title}</h3>
               <div className="missed-meta">
-                <Link>
-                  <button className='read-more-btn'>Read More..</button>
-                </Link>
+                <a
+                  href={article.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="read-more-btn">Read More..</button>
+                </a>
               </div>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </div>
